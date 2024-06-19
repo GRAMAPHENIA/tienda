@@ -6,12 +6,12 @@ export const PRODUCT_CATEGORIES = [
       {
         name: "Seleccion del editor",
         href: "#",
-        imageSrc: "/nav/web/03.png",
+        imageSrc: "/nav/web/01.png",
       },
       {
         name: "Nuevos ingresos",
         href: "#",
-        imageSrc: "/nav/web/03.png",
+        imageSrc: "/nav/web/02.png",
       },
       {
         name: "Más vendidos",
@@ -27,12 +27,12 @@ export const PRODUCT_CATEGORIES = [
       {
         name: "Seleccion del editor",
         href: "#",
-        imageSrc: "/nav/3d/03.png",
+        imageSrc: "/nav/3d/01.png",
       },
       {
         name: "Nuevos ingresos",
         href: "#",
-        imageSrc: "/nav/3d/03.png",
+        imageSrc: "/nav/3d/02.png",
       },
       {
         name: "Más vendidos",
