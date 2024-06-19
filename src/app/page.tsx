@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import MaxWidthWrapper from "@/components/MaxWithWrapper/MaxWithWrapper";
+import MaxWidthWrapper from "@/components/maxwidthwrapper/MaxWidthWrapper";
 
 import { Zap, ShieldCheck, Gem } from "lucide-react";
 
