@@ -31,4 +31,11 @@
 
 - npm install -D nodemon
 
+#
+
+- npx shadcn-ui@latest add input
+- npx shadcn-ui@latest add label
+
+
+
 
