@@ -1,16 +1,16 @@
 "use client";
 
 import Link from "next/link";
-import {Label} from "@/components/ui/label";
-import {Input} from "@/components/ui/input";
+
+import { Label } from "@/components/ui/label";
+import { Input } from "@/components/ui/input";
 
 import { Icons } from "@/components/icons/Icons";
 import { buttonVariants } from "@/components/ui/button";
 
 import { ArrowRight } from "lucide-react";
 
-// Asegúrate de importar la función `cn` si es necesaria
-import { cn } from "@/lib/utils"; // Ejemplo de cómo se podría importar `cn` si está definida en otro archivo
+import { cn } from "@/lib/utils";
 
 const page = () => {
   return (
@@ -23,7 +23,7 @@ const page = () => {
             <Link
               className={buttonVariants({
                 variant: "link",
-                className: "gap-1.5", // Uso correcto de `:`
+                className: "gap-1.5", 
               })}
               href="/sign-in"
             >
@@ -38,14 +38,14 @@ const page = () => {
                 <div className="grid gap-1 py-2">
                   <Label htmlFor="email">Email</Label>
                   <Input
-                    className="focus-visible:ring-red-500"
+                    className="focus-visible:ring-red-500/40 mt-2"
                     placeholder="you@example.com"
                   />
                 </div>
                 <div className="grid gap-1 py-2">
                   <Label htmlFor="password">Password</Label>
                   <Input
-                    className="focus-visible:ring-red-500"
+                    className="focus-visible:ring-red-500/40 mt-2"
                     placeholder="password"
                   />
                 </div>
