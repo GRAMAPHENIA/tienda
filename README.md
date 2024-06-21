@@ -36,6 +36,12 @@
 - npx shadcn-ui@latest add input
 - npx shadcn-ui@latest add label
 
+#
 
+- npm install react-hook-form @hookform/resolvers zod sonner
+
+#
+
+- npm install @trpc/client @trpc/next @trpc/react-query @trpc/server @tanstack/react-query
 
 
