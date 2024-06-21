@@ -11,7 +11,8 @@ import { buttonVariants, Button } from "@/components/ui/button";
 
 import { ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { z } from "zod";
+import { trpc } from "@/trpc/client";
+
 import {
   AuthCredentialsValidator,
   TAuthCredentialsValidator,
@@ -25,6 +26,9 @@ const Page = () => {
   } = useForm<TAuthCredentialsValidator>({
     resolver: zodResolver(AuthCredentialsValidator),
   });
+
+  const { data } = trpc.anyApiRoute.useQuery();
+  console.log(data);
 
   const onSubmit = ({ email, password }: TAuthCredentialsValidator) => {
     // Enviar datos al servidor
@@ -65,6 +69,7 @@ const Page = () => {
                       "focus-visible:ring-red-500/60": errors.email,
                     })}
                     placeholder="usuario@ejemplo.com"
+                    autoComplete="current-email"
                   />
                 </div>
                 <div className="grid gap-1 py-2">
@@ -78,6 +83,7 @@ const Page = () => {
                       "focus-visible:ring-red-500/60": errors.password,
                     })}
                     placeholder="password"
+                    autoComplete="current-password"
                   />
                 </div>
                 <Button type="submit">Iniciar sesión</Button>{" "}
