@@ -16,7 +16,7 @@ import { trpc } from "@/trpc/client";
 import {
   AuthCredentialsValidator,
   TAuthCredentialsValidator,
-} from "@/lib/validators/account-credentials-validators";
+} from "@/lib/validators/account-credentials-validator";
 
 const Page = () => {
   const {
